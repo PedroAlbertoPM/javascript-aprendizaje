@@ -1,0 +1,67 @@
+<script>
+    console.log("arrays");
+    var miArreglo = ["John", 24];
+console.log(miArreglo);
+
+var estudiantes = ["Nora", "Gino", "Emily", "Juan"];
+console.log(estudiantes);
+
+var notas = [95, 67, 89, 56];
+console.log(notas);
+
+/*
+ arreglos anidados
+*/
+
+console.log("arreglos anidados");
+
+var listaDeEstudiantes = [[ "Nora",97] , ["Gino" ,78]];
+console.log(listaDeEstudiantes);
+
+var listaDeProdcutos = [["Camisa" , 5.67 , "S134"], ["Celular" , 250 , "S356"] , ["Zapatos" , 36.7 , "S678" ,]];
+console.log(listaDeProdcutos);
+
+var datos = [[3.4 , 5.6 , 3.2] , [6.7 , 4.5 , 7.8 ] , [5.6 , 3.4 , 7.8]];
+console.log(datos);
+
+/*
+ Acceder a los elementos de un arreglo
+*/
+console.log("Acceder a los elementos de un arreglo");
+var miArreglo = [10, 20, 30];
+/*
+Arreglo: [10, 20, 30]
+Indices:  0   1   2
+*/
+
+var miArreglo = [10, 20, 30];
+
+console.log(miArreglo[0]); //10
+console.log(miArreglo[1]); //20
+console.log(miArreglo[2]); //30
+
+// Nota: Acceder a un índice que no existe (como miArreglo[3]) devuelve undefined
+console.log(miArreglo[3]); 
+
+var suma = miArreglo[0] + miArreglo[1] + miArreglo[2];
+
+console.log(suma); // 60
+
+/*
+ Modificar elementos de un arreglo
+*/
+
+console.log("modificar elementos de un arreglo");
+
+var miArreglo = [10, 20, 30];
+
+miArreglo[0] = 40;
+console.log(miArreglo); // [40, 20, 30]
+
+miArreglo[1] = "Hola";
+console.log(miArreglo); // [40, "Hola", 30]
+
+miArreglo[1] = [1, 2, 3];
+console.log(miArreglo); // [40, [1, 2, 3], 30]
+
+</script>
