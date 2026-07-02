@@ -64,4 +64,66 @@ console.log(miArreglo); // [40, "Hola", 30]
 miArreglo[1] = [1, 2, 3];
 console.log(miArreglo); // [40, [1, 2, 3], 30]
 
+
+/*
+Acceder a arreglos multidimensionales
+*/
+var miArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+/*
+Arreglo:            [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Índices:                  0           1           2
+Índices internos:   0  1  2     0  1  2     0  1  2
+*/
+
+console.log(miArreglo[1][0]); // 4
+console.log(miArreglo[1][1]); // 5
+console.log(miArreglo[1][2]); // 6
+
+console.log(miArreglo[0][2]); 
+console.log(miArreglo[0][0]); 
+console.log(miArreglo[0][0]); 
+console.log(miArreglo[1][1]);
+
+/*
+ .push() agrega un elemento al final del arreglo
+*/
+
+var arreglo = [[0,1,2,3],[4,5,6],[7,8,9]];
+estaciones.push("Verano");
+console.log(estaciones);
+
+/*
+.pop() elimina el último elemento del arreglo
+*/
+
+var estaciones;
+var estacion;
+
+estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+
+estacion = estaciones.pop();
+
+console.log(estaciones);
+console.log(estacion);
+
+/*
+.shift() elimina el primer elemento del arreglo
+*/
+
+var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+estaciones.shift();
+console.log(estaciones);
+
+/*
+.unshift() agrega un elemento al inicio del arreglo
+*/
+
+var estaciones = ["Invierno", "Otoño", "Primavera"];
+estaciones.unshift("Verano"); //Agregar al principio del arreglo
+console.log(estaciones);
+
+/*
+
+*/
 </script>
