@@ -1,0 +1,66 @@
+<script>
+    //Ambito Global
+    var miVariableGlobal = 5;
+
+    console.log(miVariableGlobal);
+
+    function miFuncion(){
+         console.log(miVariableGlobal); 
+    } 
+
+    miFuncion();
+
+    console.log(miVariableGlobal);
+
+    //Ambito Local
+    function miFuncion() { 
+    var miVariableLocal = 4; 
+    console.log(miVariableLocal); 
+    }
+    miFuncion();
+
+
+    /*
+    Ambito Global vs Ambito Local
+    */
+
+   var miNombre = "Nora";
+   function mostrarMiNombre() { 
+    var miNombre = "Gino"; 
+    console.log(miNombre);
+     }
+
+    mostrarMiNombre();
+    console.log(miNombre);
+
+    /* Retorno de valores */
+
+    function sumar(a, b) { 
+        return a + b; 
+    }
+
+    console.log(sumar(5, 3));
+
+    /* Undefined*/
+
+    function sumar(a, b) { 
+        console.log(a + b); 
+    }
+    console.log(sumar(5,3));
+
+    /* Asignar un valor retornado*/
+
+     function sumar(a, b) { 
+        return a + b;   
+     }
+     var resultado = sumar(5, 3); // var resultado = 8
+     console.log(resultado);
+
+     function crearCadenaConMeta(LenguajeDeProgramacion) {
+        return "mi meta es aprender " + LenguajeDeProgramacion;
+     }
+
+    var miMeta = crearCadenaConMeta("JavaScript");
+    console.log(miMeta);
+     
+    </script>
