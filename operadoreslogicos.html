@@ -1,0 +1,47 @@
+<script>
+    console.log("Operadores logicos");
+    console.log("---------------------------------------------------");
+/*
+  Tabla de verdad del operador AND
+  Para: X && Y
+  |  X  |  Y  | X && Y |
+  ----------------------
+  |  T  |  T  |    T   |
+  |  T  |  F  |    F   |
+  |  F  |  T  |    F   |
+  |  F  |  F  |    F   |
+  La expresión solo es verdadera cuando ambos operandos
+  son verdaderos.
+*/
+//console.log(true && true); //true
+//console.log(true && false); //false
+//console.log(false && true); //false
+//console.log(false && false); //false
+
+var a = 15;
+console.log((a > 5) && (a < 10));
+
+var a = 1;
+console.log((a > 5) && (a == 3));
+
+
+
+/*
+  Tabla de verdad del operador NOT
+  Para: !X
+  |  X  |  !X  |
+  --------------
+  |  T  |  F   |
+  |  F  |  T   |
+*/
+
+//console.log(!true); //false
+//console.log(!false); //true
+console.log("---------------------------------------------------");
+var a = 8;
+//!(a > 5) --> !true --> false
+console.log(!(a > 5));
+//!(a < 5) --> !false --> true
+console.log(!(a < 5));
+
+</script>
