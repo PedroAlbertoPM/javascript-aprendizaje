@@ -1,4 +1,90 @@
 <script>
+    
     console.log("Sentencias condicionales");
     console.log("---------------------------------------------------");
+/*
+    var x = 5;
+
+    if ((x > 2) && (x < 10)) {
+        console.log("La condición es verdadera");
+    }
+*/
+
+var estacion = "Invierno";
+
+if(estacion == "Invierno"){
+    console.log("Si me encanta el invierno");
+}
+
+console.log("Despues del condicional");
+
+//clausula else
+
+var x = 5;
+
+if (x < 2) {
+    console.log("La condición es verdadera");
+} else {
+    console.log("La condición es falsa");
+}
+
+var estacion = "Invierno";
+if (estacion === "Verano"){
+    console.log("Ya empezo el verano,ya podemos ir a la playa");
+} else {
+    console.log("Ya quiero que sea verano para poder ir a la playa");
+}
+
+//clausula else if
+console.log("---------------------------------------------------");
+function clasificarValor(valor) {
+if (valor % 2 === 0) {
+    console.log("Divisible entre 2");
+} else if (valor % 3 == 0) {
+    console.log("Divisible entre 3");
+} else {
+    console.log("No es divisible entre las opciones");
+}
+}
+
+//clasificarValor(2); // Divisible entre 2
+clasificarValor(15); // Divisible entre 3
+clasificarValor(7); // No es divisible entre las opciones
+
+
+//condicionales orden logico
+console.log("---------------------------------------------------");
+function clasificarValor1(valor){
+  if (valor < 5) {
+    console.log(`El número ${valor} es menor que 5.`);
+  } else if (valor < 10) {
+    console.log(`El número ${valor} es menor que 10.`);
+  }  else {
+    console.log(`El número ${valor} es mayor o igual a 10.`);
+  }
+}
+
+clasificarValor1(2); // Resultado: El número 2 es menor que 5.
+clasificarValor1(7); // Resultado: El número 7 es menor que 10.
+clasificarValor1(15); // Resultado: El número 15 es mayor o igual a 10.
+
+//Encadenar sentencias condicionales "if..else"
+console.log("---------------------------------------------------");
+console.log
+function interpretarIMC(indiceDeMasaCorporal) {
+if (indiceDeMasaCorporal < 18.5) {
+ console.log("Bajo peso");
+} else if (indiceDeMasaCorporal <= 24.9) {
+    console.log("Normal");
+} else if (indiceDeMasaCorporal <= 29.9) {
+    console.log("Sobrepeso");
+} else {
+ console.log("Obesidad");
+}
+}
+
+interpretarIMC(17.8); // Resultado: Bajo peso
+interpretarIMC(22.2); // Resultado: Normal
+interpretarIMC(28.5); // Resultado: Sobrepeso
+interpretarIMC(32.2); // Resultado: Obesidad
 </script>
