@@ -1,0 +1,71 @@
+<script>
+    console.log("Sentencia Switch");
+    console.log("------------------------------------------------");
+
+    function clasificarValor(valor){
+        var respuesta;
+        switch(valor){
+            case 1:
+                respuesta = "alpha";
+            break;
+            case 2:
+                respuesta = "beta";
+            break;
+            case 3:
+                respuesta = "gamma";
+            break;
+            case 4:
+                respuesta = "delta";
+            break;
+        }
+        return respuesta;
+    }
+
+     resultado = clasificarValor(4);
+     console.log(resultado);
+
+     //otro ejemplo
+     console.log("otro ejemplo:");
+
+     var producto = "helado";
+
+switch (producto) {
+    case "pizza":
+     console.log("La pizza basica cuesta $10.55");    
+    break;
+    case "hamburguesa":
+        console.log("Las hamburguesas cuestan $6.78");
+    break;
+    case "helado":   
+        console.log("El healdo cuesta $2.8");
+    break; 
+}
+
+console.log("Luego del switch");
+
+//sentencias switch opcion predeterminada
+
+console.log("-----------------------------------------------")
+
+function seleccionarIdioma(valor) {
+    var idioma;
+    switch (valor){
+        case 1:
+            idioma = "Español";
+            break;
+        case 2:
+            idioma = "Frances";
+            break;
+        case 3:
+            idioma = "Italiano";
+            break;
+        default:
+            idioma = "Ingles";
+            break;    
+    }
+    return idioma;
+}
+
+console.log(seleccionarIdioma(4));
+
+</script>
