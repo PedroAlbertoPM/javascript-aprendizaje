@@ -45,7 +45,7 @@ console.log("Luego del switch");
 
 //sentencias switch opcion predeterminada
 
-console.log("-----------------------------------------------")
+console.log("-----------------------------------------------");
 
 function seleccionarIdioma(valor) {
     var idioma;
@@ -67,5 +67,88 @@ function seleccionarIdioma(valor) {
 }
 
 console.log(seleccionarIdioma(4));
+
+//sentencias switch multiples casos
+console.log("--------------------------------");
+console.log("switch multiples casos");
+
+function clasificarVolumen(valor){
+    var volumen;
+    switch(valor) {
+        case 1 :
+            volumen = "bajo";
+            break;
+        case 2:
+        case 3:
+            volumen = "intermedio";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            volumen = "Alto";
+            break;
+    }
+    return volumen;
+}
+console.log(clasificarVolumen(4));
+
+//Reemplazar if-else por switch
+console.log("------------------------------------------------");
+/*
+function seleccionarIdioma(valor) {
+    var idioma;
+
+    if (valor == 1) {
+        idioma = "Español";
+    } else if (valor == 2) {
+        idioma = "Francés";
+    } else if (valor == 3) {
+        idioma = "Italiano";
+    } else {
+        idioma = "Inglés";
+    }
+
+    return idioma;
+}
+*/
+function seleccionarIdioma(valor) {
+var idioma;
+switch(valor) {
+    case 1:
+        idioma = "Español";
+        break;
+    case 2:
+        idioma = "Frances";
+        break;
+    case 3: 
+        idioma = "Italiano";
+        break;
+    default:
+        idioma = "Ingles";
+        break;
+}
+    return idioma;
+}
+    console.log(seleccionarIdioma(3));
+
+console.log("-------------------------------------------");
+console.log("Retornar valores booleanos");
+
+function esMenorQue( a, b) {
+/*
+    if (a < b) {
+        return true;
+    } else {
+        return false;
+    }
+*/
+    return a < b;
+}
+
+console.log(esMenorQue(3,6));
+
+console.log("-------------------------------------------");
+console.log("Patrón de retorno anticipado");
+
 
 </script>
