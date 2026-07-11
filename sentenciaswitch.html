@@ -150,5 +150,20 @@ console.log(esMenorQue(3,6));
 console.log("-------------------------------------------");
 console.log("Patrón de retorno anticipado");
 
+function miFuncion() {
+    console.log("Hola");
+    return "Mundo";
+    console.log("Adiós");
+}
+console.log(miFuncion());
+
+function calcularRaizCuadrada(num) {
+    if(num < 0) {
+        return undefined;
+    }
+    return Math.sqrt(num);
+}
+
+    console.log(calcularRaizCuadrada(-5));
 
 </script>
