@@ -248,4 +248,54 @@ console.log(miReceta.ingredientes.cobertura);
 console.log(miReceta.ingredientes.cobertura.azucar);
 console.log(miReceta.ingredientes.cobertura.chocolate);
 console.log(miReceta.ingredientes.cobertura.mantequilla);
+
+//Arreglos anidados 
+console.log("------------------------------------");
+
+var misPlantas = [
+  {
+    tipo: "flores",
+    lista: [
+      "rosas",
+      "tulipanes",
+      "dientes de león"
+    ]
+  },
+  {
+    tipo: "árboles",
+    lista: [
+      "abeto",
+      "pino",
+      "abedul"
+    ]
+  }
+];
+
+//rosas
+var primeraFlor = misPlantas[0].lista[0];
+console.log(primeraFlor);
+
+//tulipanes
+var primeraFlor = misPlantas[0].lista[1];
+console.log(primeraFlor);
+
+//dientes de leon
+var primeraFlor = misPlantas[0].lista[2];
+console.log(primeraFlor);
+
+console.log("--------------------------------------");
+//abeto
+var primerArbol = misPlantas[1].lista[0];
+console.log(primerArbol);
+
+//pino
+var segundoArbol = misPlantas[1].lista[1];
+console.log(segundoArbol);
+
+//abedul 
+var tercerArbol = misPlantas[1].lista[2];
+console.log(tercerArbol);
+
+//
+
 </script>
