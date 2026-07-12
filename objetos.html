@@ -21,7 +21,7 @@
     console.log(miPerro.raza);
 
     //acceder a propiedades notacion de corchetes
-    console.log("----------------------------")
+    console.log("----------------------------");
     var miCuaderno = {
         "color" : "verde",
         "categoria" : 3,
@@ -31,7 +31,7 @@
 
     console.log(miCuaderno["numero de paginas"]);
     //acceder a propiedades Variables
-    console.log("----------------------------")
+    console.log("----------------------------");
 
     var resultado = {
         1 : "nora256",
@@ -44,7 +44,7 @@
     console.log(resultado[posicion]);
 
     //actualizar propiedades
-    console.log("--------------------------")
+    console.log("--------------------------");
    var mochila = {
   "color": "azul",
   "tamaño": "mediano",
@@ -96,7 +96,7 @@ delete  curso.idioma; //
 console.log(curso.idioma); //Undefined
 
 //objetos para busqueda
-
+console.log("--------------------------");
 function buscarElementoQuimico(simbolo) {
 
     var simbolosQuimicos = {
@@ -111,13 +111,14 @@ function buscarElementoQuimico(simbolo) {
 
   return simbolosQuimicos[simbolo];
   
+}
+
   console.log(buscarElementoQuimico("Al"));
   console.log(buscarElementoQuimico("S"));
   console.log(buscarElementoQuimico("Cl"));
   console.log(buscarElementoQuimico("He"));
   console.log(buscarElementoQuimico("B"));
   console.log(buscarElementoQuimico("Li"));
-}
 
     /*
   switch (simbolo) {
@@ -142,4 +143,109 @@ function buscarElementoQuimico(simbolo) {
   }
 */
 
+//verificar propiedades 
+console.log("--------------------------");
+
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+
+console.log(miCuaderno.hasOwnProperty("color"));
+console.log(miCuaderno.hasOwnProperty("origen"));
+
+function verificarPropiedad(obj, propiedad){
+ if (obj.hasOwnProperty(propiedad)) {
+    return "Propiedad: " + obj[propiedad];
+ } else {
+    return "El objeto no tiene esta propiedad.";
+ }
+}
+
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+
+console.log(verificarPropiedad(miCuaderno , "origen"));
+
+//objetos complejos
+console.log("---------------------------------------------------");
+
+var ordenesDePizzas = [
+  {
+    "tipo": "margarita",
+    "tamaño": "individual",
+    "precio": 5.67,
+    "toppings": [
+      "extra queso",
+      "champiñones",
+      "piña"
+    ],
+    "paraLlevar": true
+  },
+  {
+    "tipo": "cuatro quesos",
+    "tamaño": "familiar",
+    "precio": 18.34,
+    "toppings": [
+      "extra queso",
+      "pimentón"
+    ], 
+     "paraLlevar" : false
+  }, 
+  {
+    "tipo": "napolitana",
+    "tamaño": "individual",
+    "precio": 6.78,
+    "toppings": [],
+    "paraLlevar": true
+  }
+];
+
+console.log(ordenesDePizzas[0]["tipo"]);
+console.log(ordenesDePizzas[0].precio);
+console.log(ordenesDePizzas[0].toppings);
+console.log(ordenesDePizzas[1].toppings);
+
+console.log(ordenesDePizzas[2]);
+
+//objetos anidados
+
+console.log("---------------------------------------");
+
+var miReceta = {
+  "descripcion": "mi postre favorito",
+  "costo": 15.6,
+  "ingredientes": {
+    "masa": {
+      "harina": "100 grs",
+      "sal": "1 cucharadita",
+      "agua": "1 taza"
+    },
+    "cobertura": {
+      "azucar": "120 grs",
+      "chocolate": "4 cucharadas",
+      "mantequilla": "200 grs"
+    }
+  }
+};
+
+//console.log(miReceta.descripcion);
+//console.log(miReceta.costo);
+console.log(miReceta.ingredientes.masa.harina);
+console.log(miReceta.ingredientes.masa.sal);
+console.log(miReceta.ingredientes.masa.agua);
+
+console.log(miReceta.ingredientes.masa["harina"]);
+console.log(miReceta.ingredientes.masa["sal"]);
+console.log(miReceta.ingredientes.masa["agua"]);
+
+console.log(miReceta.costo);
+console.log(miReceta.ingredientes.cobertura);
+console.log(miReceta.ingredientes.cobertura.azucar);
+console.log(miReceta.ingredientes.cobertura.chocolate);
+console.log(miReceta.ingredientes.cobertura.mantequilla);
 </script>
